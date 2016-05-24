@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-jun-2015, 19:55:32
+    Author     : Vianey Vargas
+*/
+
+#btnGuardar{
+    -fx-background-color :#85D1E6;
+}
+#btnCancelar{
+    -fx-background-color :#F36367;
+}
+#btnNuevo{
+    -fx-background-color :#54E482
+}

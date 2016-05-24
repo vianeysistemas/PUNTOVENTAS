@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#btnNuevaCategoria{
+    -fx-background-color :#85D1E6;
+}
+#btnGuardarCategoria{
+    -fx-background-color :#54E482;
+}

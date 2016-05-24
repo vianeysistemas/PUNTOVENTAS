@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="907.0" prefWidth="1274.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLFacturacionController">
+    <children>
+        <TabPane layoutX="15.0" layoutY="11.0" prefHeight="869.0" prefWidth="1245.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Facturas">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="515.0" prefWidth="829.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="22.0" text="TIENDA : ">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="labelTienda" layoutX="90.0" layoutY="22.0" prefHeight="17.0" prefWidth="236.0" />
+                                <TitledPane animated="false" layoutX="14.0" layoutY="48.0" prefHeight="758.0" prefWidth="1168.0" text="Generar Factura">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="732.0" prefWidth="1203.0">
+                                            <children>
+                                                <MenuButton layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="138.0" text="Opciones" textFill="#288659">
+                                                    <items>
+                                                        <MenuItem mnemonicParsing="false" text="Nueva Factura" />
+                                                        <MenuItem mnemonicParsing="false" text="Cancelar" />
+                                                        <MenuItem mnemonicParsing="false" text="Importe" />
+                                                        <MenuItem mnemonicParsing="false" text="Guardar" />
+                                                        <MenuItem mnemonicParsing="false" text="Imprimir" />
+                                                        <MenuItem mnemonicParsing="false" text="Salir" />
+                                                    </items>
+                                                    <font>
+                                                        <Font name="System Bold" size="14.0" />
+                                                    </font>
+                                                </MenuButton>
+                                                <Pane layoutX="14.0" layoutY="43.0" prefHeight="216.0" prefWidth="1176.0" AnchorPane.bottomAnchor="463.4" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="3.400000000000091" AnchorPane.topAnchor="43.0">
+                                                    <children>
+                                                        <Label layoutX="14.0" layoutY="24.0" text="Fecha : " />
+                                                        <Label layoutX="14.0" layoutY="59.0" text="Vendedor : " />
+                                                        <Label layoutX="14.0" layoutY="86.0" text="Nit : " />
+                                                        <Label layoutX="14.0" layoutY="116.0" text="Nombre : " />
+                                                        <Label layoutX="14.0" layoutY="147.0" text="Direccion : " />
+                                                        <TextField fx:id="txtVendedor" disable="true" editable="false" layoutX="89.0" layoutY="55.0" prefHeight="25.0" prefWidth="173.0" />
+                                                        <TextField fx:id="txtNit" layoutX="89.0" layoutY="91.0" prefHeight="25.0" prefWidth="172.0" />
+                                                        <TextField fx:id="txtNombre" layoutX="89.0" layoutY="121.0" prefHeight="25.0" prefWidth="302.0" />
+                                                        <TextField fx:id="txtDireccion" layoutX="89.0" layoutY="152.0" prefHeight="25.0" prefWidth="300.0" />
+                                                        <Button fx:id="btnBuscarClienteFac" layoutX="270.0" layoutY="91.0" mnemonicParsing="false" text="Buscar" />
+                                                        <TextField fx:id="txtNroDcto" layoutX="506.0" layoutY="20.0" />
+                                                        <Label layoutX="427.0" layoutY="24.0" text="NroDcto : " />
+                                                        <Label layoutX="427.0" layoutY="59.0" text="TipoDcto : " />
+                                                        <Label layoutX="424.0" layoutY="95.0" text="Tipo Pago : " />
+                                                        <Label layoutX="422.0" layoutY="134.0" text="Nro Cuotas :" />
+                                                        <Label layoutX="580.0" layoutY="134.0" text="Monto X Cuotas : " />
+                                                        <TextField fx:id="txtNroCuotas" layoutX="501.0" layoutY="130.0" prefHeight="25.0" prefWidth="68.0" />
+                                                        <TextField fx:id="txtMontoCuota" layoutX="675.0" layoutY="130.0" prefHeight="25.0" prefWidth="87.0" />
+                                                        <ComboBox id="comboTipoDocumento" fx:id="comboTipoDocumento" layoutX="508.0" layoutY="55.0" prefWidth="150.0" promptText="Seleccione" />
+                                                    </children>
+                                                </Pane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

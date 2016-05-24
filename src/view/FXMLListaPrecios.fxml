@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="602.0" prefWidth="1058.0" stylesheets="@../css/fxmllistaprecios.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLListaPreciosController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="809.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/css/fxmllistaprecios.css" />
+          </stylesheets>
+      </AnchorPane>
+      <TabPane prefHeight="560.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Lista Precios">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane animated="false" prefHeight="485.0" prefWidth="809.0" text="Registro" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="807.0">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="27.0" text="Codigo : " />
+                                    <Label layoutX="22.0" layoutY="58.0" text="Titulo : " />
+                                    <Label layoutX="22.0" layoutY="90.0" text="Descripcion : " />
+                                    <Button fx:id="btnNuevo" layoutX="20.0" layoutY="122.0" mnemonicParsing="false" onAction="#OnActionNuevaListaPrecio" prefHeight="38.0" prefWidth="78.0" text="Nuevo" />
+                                    <Button fx:id="btnGuardar" layoutX="109.0" layoutY="122.0" mnemonicParsing="false" onAction="#OnActionGuardarListaPrecio" prefHeight="38.0" prefWidth="78.0" text="Guardar" />
+                                    <Button fx:id="btnEliminar" layoutX="198.0" layoutY="122.0" mnemonicParsing="false" onAction="#OnActionEliminarListaPrecio" prefHeight="38.0" prefWidth="78.0" text="Eliminar" />
+                                    <TextField fx:id="txtCodListaPrecio" layoutX="93.0" layoutY="23.0" prefHeight="25.0" prefWidth="131.0" promptText="Codigo" />
+                                    <TextField fx:id="txtTitulo" layoutX="93.0" layoutY="54.0" prefHeight="25.0" prefWidth="186.0" />
+                                    <TextField fx:id="txtDescripcion" layoutX="93.0" layoutY="86.0" prefHeight="25.0" prefWidth="437.0" />
+                                    <DatePicker fx:id="datePicker1" layoutX="356.0" layoutY="23.0" />
+                                    <DatePicker fx:id="datePicker2" layoutX="608.0" layoutY="23.0" />
+                                    <Button fx:id="btnListaPrecios" layoutX="231.0" layoutY="23.0" mnemonicParsing="false" onAction="#OnActionListaPrecios" prefHeight="25.0" prefWidth="35.0" text="..." />
+                                    <Label layoutX="279.0" layoutY="27.0" text="Fecha Inicial :" />
+                                    <Label layoutX="537.0" layoutY="27.0" text="Fecha Final :" />
+                                    <TableView fx:id="tblListaPrecios1" layoutX="10.0" layoutY="180.0" onMouseClicked="#OnMouseClickedTblListaPrecios" prefHeight="356.0" prefWidth="1036.0">
+                                      <columns>
+                                        <TableColumn fx:id="columCodPrecio1" prefWidth="75.0" text="CODIGO" />
+                                        <TableColumn fx:id="columListaPrecio1" prefWidth="230.0" text="TITULO" />
+                                          <TableColumn fx:id="columnDescripcion1" prefWidth="490.0" text="DESCRIPCION" />
+                                          <TableColumn fx:id="columnFecha1" prefWidth="120.0" text="FECHA_INICIAL" />
+                                          <TableColumn fx:id="columnFecha2" prefWidth="120.0" text="FECHA_FINAL" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Precios Productos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

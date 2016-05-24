@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group focusTraversable="true" layoutX="20.0" layoutY="25.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLBuscaProductosController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="800.0" stylesheets="@../css/fxmlbuscaproductos.css">
+         <children>
+            <Label layoutX="300.0" layoutY="26.0" text="BUSCAR PRODUCTOS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCerrar" layoutX="800.0" layoutY="-17.0" mnemonicParsing="false" onAction="#OnActionClose" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproductos.css" />
+            <Button fx:id="btnMinimizar" layoutX="769.0" layoutY="-17.0" mnemonicParsing="false" onAction="#OnActionMinimizar" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproductos.css" />
+            <TableView fx:id="tblBuscaProductos" layoutX="14.0" layoutY="118.0" onMouseClicked="#OnMouseClickedTblProductos" prefHeight="427.0" prefWidth="802.0">
+              <columns>
+                <TableColumn fx:id="columCodProducto" prefWidth="75.0" text="CODIGO" />
+                <TableColumn fx:id="columReferencia" prefWidth="130.0" text="REFERENCIA" />
+                  <TableColumn fx:id="columNombreProducto" prefWidth="520.0" text="DESCRIPCION" />
+              </columns>
+            </TableView>
+            <Label layoutX="20.0" layoutY="83.0" text="Buscar : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuscaProducto" layoutX="72.0" layoutY="80.0" onKeyReleased="#OnKeyReleasedBuscarProductos" prefHeight="25.0" prefWidth="382.0" promptText="Buscar Producto...">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnEnviarProducto" layoutX="461.0" layoutY="80.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproductos.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

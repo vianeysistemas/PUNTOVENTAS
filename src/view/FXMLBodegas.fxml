@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="626.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLBodegasController">
+    <stylesheets>
+        <URL value="@/css/fxmlbodegas.css" />
+    </stylesheets>
+   <children>
+      <Pane fx:id="panelBodega" layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="578.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Pane layoutX="23.0" layoutY="24.0" prefHeight="136.0" prefWidth="533.0">
+               <children>
+                  <Label layoutX="26.0" layoutY="21.0" text="Codigo :" />
+                  <Label layoutX="26.0" layoutY="61.0" text="Descripcion : " />
+                  <Label layoutX="26.0" layoutY="99.0" text="Bodega : " />
+                  <TextField fx:id="txtCodBodega" editable="false" layoutX="97.0" layoutY="17.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtDescripcionBodega" layoutX="97.0" layoutY="57.0" prefHeight="25.0" prefWidth="395.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtBodega" layoutX="97.0" layoutY="95.0" prefHeight="25.0" prefWidth="248.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Separator layoutX="23.0" layoutY="179.0" prefHeight="0.0" prefWidth="566.0" />
+            <TableView fx:id="tblBodega" layoutX="23.0" layoutY="192.0" onMouseClicked="#OnMouseClickedTblBodega" prefHeight="329.0" prefWidth="566.0">
+              <columns>
+                  <TableColumn minWidth="8.0" prefWidth="9.0" />
+                <TableColumn fx:id="colCodigo" prefWidth="75.0" text="CODIGO" />
+                <TableColumn fx:id="colBodega" prefWidth="75.0" text="BODEGA" />
+                  <TableColumn fx:id="colDescripcion" prefWidth="450.0" text="DESCRIPCION" />
+                  <TableColumn fx:id="colAccion" minWidth="25.0" prefWidth="140.0" text="ACCION" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

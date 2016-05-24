@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#btnProducto{
+    -fx-background-color :#F7D358;
+}
+#btnProveedor{
+    -fx-background-color :#F7D358;
+}
+#btnAddCategoria{
+    -fx-background-color :#85D1E6;
+}
+#btnGuardarProducto{
+    -fx-background-color :#85D1E6;
+}
+#btnElminarProducto{
+    -fx-background-color :#F36367;
+}
+#btnNuevoProducto{
+    -fx-background-color :#54E482
+}
+#btnTipoInventario{
+   -fx-background-color :#85D1E6; 
+}

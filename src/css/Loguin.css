@@ -1,0 +1,19 @@
+.AnchorPaneles {
+    -fx-background-color: #4E4F52;
+    -fx-background-radius:10;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+    -fx-border-color :gray;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-border-radius:10;
+    -fx-background-size: 100%100%;
+}
+.Botones{
+    //-fx-background-color:#5A8BFC;
+    //-fx-border-color : #FFFFFF;
+    -fx-background-color:#cc3535;
+    -fx-border-color : #FFFFFF;
+    -fx-background-radius:10;
+    -fx-border-radius:10;
+}
+

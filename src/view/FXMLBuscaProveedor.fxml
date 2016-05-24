@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group layoutX="25.0" layoutY="25.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLBuscaProveedorController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="800.0" stylesheets="@../css/fxmlbuscaproveedor.css">
+         <children>
+            <Label layoutX="273.0" layoutY="29.0" text="BUSCAR PROVEEDORES">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCerrarVentProv" layoutX="770.0" layoutY="-17.0" mnemonicParsing="false" onAction="#OnActionCerrarVentProv" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproveedor.css" />
+            <TableView fx:id="tblProveedor" layoutX="14.0" layoutY="135.0" onMouseClicked="#OnMouseClickedTblProveedor" prefHeight="414.0" prefWidth="774.0">
+              <columns>
+                <TableColumn fx:id="columNit" prefWidth="160.0" text="NIT" />
+                <TableColumn fx:id="columProveedor" prefWidth="600.0" text="PROVEEDOR" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnEnviarProveedor" layoutX="471.0" layoutY="90.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproveedor.css" />
+      <TextField fx:id="txtBuscaProveedor" layoutX="82.0" layoutY="90.0" onKeyReleased="#OnKeyReleasedBuscaProveedor" prefHeight="25.0" prefWidth="382.0" promptText="Buscar Producto...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="93.0" text="Buscar : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMinimizarVentProv" layoutX="740.0" layoutY="-18.0" mnemonicParsing="false" onAction="#OnActionMinimizarVentProv" prefHeight="29.0" prefWidth="29.0" stylesheets="@../css/fxmlbuscaproveedor.css" />
+   </children>
+</Group>

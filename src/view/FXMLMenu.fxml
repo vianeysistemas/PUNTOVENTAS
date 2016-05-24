@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLMenuController">
+    <children>
+        <!--<BorderPane fx:id="rootLayout" layoutX="1.0" layoutY="-1.0" prefHeight="650.0" prefWidth="1000.0">-->
+        <AnchorPane prefHeight="650.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <SplitPane dividerPositions="0.18454935622317598" focusTraversable="true" orientation="VERTICAL" prefHeight="633.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="17.0">
+                        <items>
+                            <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="124.0" prefWidth="998.0" SplitPane.resizableWithParent="false">
+                                <children>
+                                    <Label layoutX="30.0" layoutY="35.0" text="Punto de Venta" textFill="#046272">
+                                        <font>
+                                            <Font name="Gill Sans MT" size="40.0" />
+                                        </font>
+                                        <effect>
+                                            <Reflection topOpacity="0.2" />
+                                        </effect>
+                                    </Label>
+                                    <HBox layoutX="803.0" layoutY="70.0" spacing="10.0" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="70.0">
+                                        <children>
+                                            <Label layoutX="803.0" layoutY="70.0" text="Usuario : " AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="70.0">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="lblAdmin" layoutX="872.0" layoutY="71.0" AnchorPane.bottomAnchor="26.0" AnchorPane.topAnchor="70.0">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </HBox>
+                                    <ImageView fitHeight="104.0" fitWidth="199.0" layoutX="583.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../imagenes/licor.gif" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="676.0">
+                                <children>
+                                    <SplitPane dividerPositions="0.23393574297188754" focusTraversable="true" layoutX="602.0" layoutY="48.0" prefHeight="525.0" prefWidth="998.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <items>
+                                            <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="-Infinity" prefHeight="525.0" prefWidth="260.0" style="-fx-background-color: white;" SplitPane.resizableWithParent="false">
+                                                <children>
+                                                    <Accordion prefHeight="305.0" prefWidth="230.0" AnchorPane.bottomAnchor="205.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <panes>
+                                                            <TitledPane fx:id="titlePanelMenu" animated="false" text="Menu">
+                                                                <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                </content>
+                                                                <font>
+                                                                    <Font size="14.0" />
+                                                                </font>
+                                                            </TitledPane>
+                                                            <TitledPane fx:id="titlePanelMaestros" text="Maestros">
+                                                                <content>
+                                                                    <ScrollPane prefViewportHeight="235.0" prefViewportWidth="261.0">
+                                                                        <content>
+                                                                            <AnchorPane fx:id="anchorPaneMaestros" prefHeight="180.0" prefWidth="200.0">
+                                                                                <children>
+                                                                                    <Button fx:id="btnProductosMenu" layoutX="19.0" layoutY="8.0" mnemonicParsing="false" onAction="#OnActionAbrirVentanaProducto" prefHeight="45.0" prefWidth="219.0" text="Productos">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnCategorias" layoutX="19.0" layoutY="60.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Categorias">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnPrecios" layoutX="19.0" layoutY="112.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Precios">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnListaPrecios" layoutX="19.0" layoutY="330.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Lista Precios">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnBodegas" layoutX="19.0" layoutY="167.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Bodegas">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnProveedor" layoutX="19.0" layoutY="220.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Proveedores">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnClientes" layoutX="19.0" layoutY="275.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Clientes">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                    <Button fx:id="btnLotes" layoutX="19.0" layoutY="385.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="219.0" text="Lotes">
+                                                                                        <font>
+                                                                                            <Font size="13.0" />
+                                                                                        </font>
+                                                                                    </Button>
+                                                                                </children>
+                                                                            </AnchorPane>
+                                                                        </content>
+                                                                    </ScrollPane>
+                                                                </content>
+                                                                <font>
+                                                                    <Font size="14.0" />
+                                                                </font>
+                                                            </TitledPane>
+                                                            <TitledPane text="Inventario">
+                                                                <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                </content>
+                                                                <font>
+                                                                    <Font size="14.0" />
+                                                                </font>
+                                                            </TitledPane>
+                                                            <TitledPane text="Facturacion">
+                                                                <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                </content>
+                                                                <font>
+                                                                    <Font size="14.0" />
+                                                                </font>
+                                                            </TitledPane>
+                                                        </panes>
+                                                    </Accordion>
+                                                </children>
+                                            </AnchorPane>
+                                            <StackPane>
+                                                <children>
+                                                    <StackPane fx:id="daftarListMenu" opacity="0.0" prefHeight="150.0" prefWidth="200.0" />
+                                                    <StackPane style="-fx-background-color: white;" StackPane.alignment="CENTER" />
+                                                </children>
+                                            </StackPane>
+                                        </items>
+                                    </SplitPane>
+                                </children>
+                            </AnchorPane>
+                        </items>
+                    </SplitPane>
+                </children>
+        </AnchorPane>
+
+        <MenuBar prefHeight="25.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+            <effect>
+                <DropShadow />
+            </effect>
+        </MenuBar>
+        <!--</BorderPane>-->
+    </children>
+</AnchorPane>

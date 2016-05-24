@@ -1,0 +1,75 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#btnListaPrecios{
+    -fx-background-color :#F7D358;
+}
+#btnNuevo{
+    -fx-background-color :#54E482
+}
+#btnGuardar{
+    -fx-background-color :#85D1E6;
+}
+#btnEliminar{
+    -fx-background-color :#F36367;
+}
+//**********LE DAMOS APARIENCIA A LA TABLA *********************
+.table-view {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: #c7c7c7;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 2;
+}
+.table-view .column-header-background {
+    //-fx-background-color: #42539d;
+    -fx-background-color: #FA8258;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI bold";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.table-cell {     
+    -fx-cell-size: 4.0em;
+    -fx-padding: 1em 0em 0.1em 0.1em;
+    -fx-font: 12px "Segoe UI";    
+    -fx-alignment: bottom-left;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: #f8f8f8;
+    -fx-base: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
