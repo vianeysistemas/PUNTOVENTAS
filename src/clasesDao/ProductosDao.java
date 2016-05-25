@@ -42,7 +42,7 @@ public class ProductosDao implements IProductos {
         Connection cn = conex.getConnection();
         CallableStatement call = null;
         try {
-            call = cn.prepareCall("{call maestros.sp_insertaproductosjaja(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}");
+            call = cn.prepareCall("{call maestros.sp_insertaproductosjaja(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) }");
             call.setString(1, dto.getIdCodigo());
             call.setString(2, dto.getReferenciaProducto());
             call.setString(3, dto.getDescripcion());
