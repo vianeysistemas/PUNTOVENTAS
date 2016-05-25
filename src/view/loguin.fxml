@@ -10,7 +10,7 @@
 
 <Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LoguinController">
     <children>
-        <AnchorPane id="AnchorPane" layoutX="19.0" layoutY="13.0" prefHeight="382.0" prefWidth="420.0" styleClass="AnchorPaneles" stylesheets="@../css/Loguin.css">
+        <AnchorPane id="AnchorPane" layoutX="19.0" layoutY="13.0" prefHeight="340.0" prefWidth="420.0" styleClass="AnchorPaneles" stylesheets="@../css/Loguin.css">
             <children>
                 <Pane layoutX="42.0" layoutY="23.0" prefHeight="325.0" prefWidth="333.0">
                     <children>
